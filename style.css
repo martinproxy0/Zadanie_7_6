@@ -1,0 +1,14 @@
+body {
+  margin-top: 50px; 
+  display: flex;
+}
+  
+.song img {
+  max-width: 100%; }
+
+footer {
+  color: #fff; }
+  footer .row {
+    padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */

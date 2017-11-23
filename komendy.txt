@@ -1,0 +1,36 @@
+$ node_modules/.bin/autoprefixer-cli -o style.prefixed.css style.css
+
+
+$ node_modules/.bin/nu-html-checker -f json index.html
+[
+  {
+    "url": "index.html",
+    "messages": [
+      {
+        "type": "error",
+        "lastLine": 153,
+        "lastColumn": 108,
+        "firstColumn": 25,
+        "message": "Attribute “alt” not allowed on element “a” at this point.",
+        "extract": "          <a class=\"img-modal-group\" href=\"https://google.pl\" alt=\"Google.pl\" target=\"_blank\">\n     ",
+        "hiliteStart": 10,
+        "hiliteLength": 84
+      }
+    ],
+    "language": "en",
+    "path": "index.html"
+  }
+]
+
+after bug correction
+$ node_modules/.bin/nu-html-checker -f json index.html
+[
+  {
+    "url": "index.html",
+    "messages": [],
+    "language": "en",
+    "path": "index.html"
+  }
+]
+
+
